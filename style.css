@@ -170,10 +170,9 @@ footer {
   }
 
   .cta-button {
-    width: 100%;
-    font-size: 1.1rem;
-    padding: 1rem;
-    text-align: center;
+    display: block;
+    margin: 2rem auto 0 auto;
+    width: fit-content;
   }
 
   .intro {
@@ -200,4 +199,23 @@ footer {
   button {
     font-size: 1rem;
   }
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  animation: floatWhatsApp 2s ease-in-out infinite;
+}
+
+.whatsapp-float img {
+  width: 55px;
+  height: 55px;
+}
+
+/* Animation */
+@keyframes floatWhatsApp {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
 }
