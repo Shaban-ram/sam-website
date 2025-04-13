@@ -8,8 +8,6 @@ Ziel ist eine klare, moderne und mobilfreundliche Präsentation.
 
 ## 📁 Projektstruktur
 
-## 📁 Projektstruktur
-
 ```plaintext
 sam-website/
 ├── index.html          ← Startseite
