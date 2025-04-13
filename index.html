@@ -2,56 +2,46 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SAM Transport</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SAM Handel & Logistik</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>SAM Transport</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Startseite</a></li>
-        <li><a href="#">Über uns</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <section>
-      <h2>Willkommen bei SAM Transport</h2>
-      <p>Zuverlässige Transportlösungen für Privat und Gewerbe – schnell, sicher und deutschlandweit.</p>
-    </section>
+<header>
+  <img src="img/logo.png" alt="SAM Logo" class="logo">
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Startseite</a></li>
+      <li><a href="about.html">Über uns</a></li>
+      <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <section>
-      <h2>Unsere Leistungen</h2>
-      <ul>
-        <li>Kleintransporte & Umzüge</li>
-        <li>Expresslieferungen</li>
-        <li>Flexible Terminvereinbarungen</li>
-      </ul>
-    </section>
+<section class="hero">
+  <div class="hero-content">
+    <h1>Ihr Partner für Handel & Transport</h1>
+    <p>Zuverlässig. Schnell. Deutschlandweit.</p>
+    <a href="contact.html" class="cta-button">Jetzt Kontakt aufnehmen</a>
+  </div>
+</section>
 
-    <section id="kontakt">
-      <h2>Kontaktformular</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
+<section class="intro">
+  <h2>Warum SAM?</h2>
+  <p>
+    Wir sind spezialisiert auf individuelle Transportlösungen für Unternehmen und Privatkunden – flexibel, effizient und termintreu.
+  </p>
+  <ul class="features">
+    <li>✅ Express-Transporte & Kurierfahrten</li>
+    <li>✅ Möbel- & Warenlieferungen</li>
+    <li>✅ Freundlicher & professioneller Service</li>
+  </ul>
+</section>
 
-        <label for="email">E-Mail:</label>
-        <input type="email" id="email" name="email" required />
+<footer>
+  <p>&copy; 2025 SAM Handel & Logistik – Göttingen | info@sam-logistics.de</p>
+</footer>
 
-        <label for="nachricht">Nachricht:</label>
-        <textarea id="nachricht" name="nachricht" rows="4" required></textarea>
-
-        <button type="submit">Absenden</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 SAM Transport</p>
-  </footer>
 </body>
 </html>
