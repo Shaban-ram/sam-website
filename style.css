@@ -1,63 +1,124 @@
+/* === Grundlayout === */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-  }
-  
-  header {
-    background-color: #222;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  main {
-    padding: 2rem;
-  }
-  
-  section {
-    margin-bottom: 2rem;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    max-width: 400px;
-  }
-  
-  input, textarea {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button {
-    padding: 0.5rem;
-    background-color: #222;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  footer {
-    background-color: #f4f4f4;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-  }
-  
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f0f0;
+  color: #1a1a1a;
+}
+
+/* === Header === */
+header {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.logo {
+  height: 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #003366;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+  color: #6bbf4e;
+  border-bottom: 2px solid #6bbf4e;
+}
+
+/* === Hero-Bereich === */
+.hero {
+  background: linear-gradient(to right, #003366, #1a4472);
+  color: #ffffff;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.subtext,
+.hero p {
+  font-size: 1.5rem;
+  color: #cdebd1;
+}
+
+/* === CTA-Button === */
+.cta-button {
+  margin-top: 2rem;
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background-color: #6bbf4e;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: #ffffff;
+  color: #003366;
+  border: 2px solid #6bbf4e;
+}
+
+/* === Inhaltsbereich === */
+.intro {
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+.features li {
+  margin: 0.5rem 0;
+  font-weight: 500;
+  color: #003366;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #dfe4e8;
+  margin-top: 4rem;
+  color: #003366;
+}
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: none;
+}
+
+
