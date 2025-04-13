@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kontakt – SAM Handel & Logistik</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="img/logo.png" alt="SAM Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="about.html">Über uns</a></li>
+        <li><a href="contact.html" class="active">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Kontaktieren Sie uns</h1>
+      <p class="subtext">Wir freuen uns auf Ihre Nachricht!</p>
+    </div>
+  </section>
+
+  <section class="intro">
+    <form action="https://formspree.io/f/xxxxxxx" method="POST" style="max-width: 500px; margin: 2rem auto; display: flex; flex-direction: column; gap: 1rem;">
+      <input type="text" name="name" placeholder="Ihr Name" required>
+      <input type="email" name="email" placeholder="Ihre E-Mail" required>
+      <textarea name="message" rows="5" placeholder="Ihre Nachricht" required></textarea>
+      <button type="submit" class="cta-button">Nachricht senden</button>
+    </form>
+    <p>Oder schreiben Sie direkt an <strong>info@sam-logistics.de</strong></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SAM Handel & Logistik – Göttingen | info@sam-logistics.de</p>
+  </footer>
+</body>
+</html>
