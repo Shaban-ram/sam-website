@@ -1,10 +1,12 @@
+/* === Grundlayout === */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #fefefe;
-  color: #003366;
+  background-color: #f0f0f0;
+  color: #1a1a1a;
 }
 
+/* === Header === */
 header {
   background-color: #ffffff;
   display: flex;
@@ -23,6 +25,7 @@ nav ul {
   display: flex;
   gap: 2rem;
   margin: 0;
+  padding: 0;
 }
 
 nav a {
@@ -31,32 +34,37 @@ nav a {
   font-weight: bold;
 }
 
-nav a:hover {
+nav a:hover,
+nav a.active {
   color: #6bbf4e;
+  border-bottom: 2px solid #6bbf4e;
 }
 
+/* === Hero-Bereich === */
 .hero {
+  background: linear-gradient(to right, #003366, #1a4472);
+  color: #ffffff;
+  padding: 6rem 2rem;
   text-align: center;
-  padding: 5rem 2rem;
-  background: linear-gradient(135deg, #e8f5e9, #e3f2fd);
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
-  color: #003366;
 }
 
-.subtext {
+.subtext,
+.hero p {
   font-size: 1.5rem;
-  color: #6bbf4e;
+  color: #cdebd1;
 }
 
+/* === CTA-Button === */
 .cta-button {
   margin-top: 2rem;
   display: inline-block;
   padding: 0.8rem 2rem;
-  background-color: #003366;
+  background-color: #6bbf4e;
   color: #ffffff;
   text-decoration: none;
   border-radius: 8px;
@@ -64,45 +72,26 @@ nav a:hover {
 }
 
 .cta-button:hover {
-  background-color: #6bbf4e;
+  background-color: #ffffff;
   color: #003366;
+  border: 2px solid #6bbf4e;
 }
 
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #f2f2f2;
-  margin-top: 4rem;
-}
-
-.hero {
-  background: linear-gradient(to right, #003366, #7BC043);
-  color: #ffffff;
-  padding: 6rem 2rem;
-  text-align: center;
-}
-
-.hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.hero-content p {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-}
-
+/* === Inhaltsbereich === */
 .intro {
   padding: 3rem 2rem;
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 .features {
   list-style: none;
   padding: 0;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .features li {
@@ -111,6 +100,25 @@ footer {
   color: #003366;
 }
 
-nav a.active {
-  border-bottom: 2px solid #6bbf4e;
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #dfe4e8;
+  margin-top: 4rem;
+  color: #003366;
 }
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: none;
+}
+
+
